@@ -2,49 +2,75 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" contet="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portifólio Eduarda Campos</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
+      <reader class="header">
+        <a href="#" class="logo">Portifolio</a>
+        <nav class="navbar">
+          <a href="#sobre" class="active">Sobre</a>
+          <a href="#formaçao">Formação</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#frameworks">Frameworks</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </reader>
       <div class="logo">Portfólio</div>
       <div class="menu" onclick="menu()">clique aqui</div>
       <nav class="navbar" id="menunavegador">
         <ul>
-          <!--o elemento ul cria uma lista de indice-->
-          <li><a href="#">Quem sou eu</a></li>
+          <li><a href="#">Sobre</a></li>
           <li><a href="#">Formação</a></li>
           <li><a href="#">Frameworks</a></li>
           <li><a href="#">Contatos</a></li>
         </ul>
       </nav>
       <h1>Seja bem vindo(a) ao meu portfólio.</h1>
-      <buton onclick="meuTema()"></buton>
+      <button onclick="meuTema()"></button>
     </header>
     <main>
-        <section id="Sobre">
-            <h2>Quem sou eu</h2>
-            <p>Sou Maria Eduarda, mãe de duas meninas e apaixonada por tecnologia. Estou iniciando minha jornada na área, unindo dedicação, curiosidade e vontade de transformar o futuro por meio do conhecimento."</p>
-        
-        </section>
-        <section id="Projetos">
-            <p>Em breve voce podera ver meus projetos como desenvolvedora</p>
-        </section>
+  <main>
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>"Sou Maria Eduarda, mãe de duas meninas e apaixonada por tecnologia. Estou iniciando minha jornada na área, unindo dedicação, curiosidade e vontade de transformar o futuro por meio do conhecimento".</p>
+    </section>
 
+    <section id="projetos">
+      <h2>Meus Projetos</h2>
+      <div class="projetos-container">
+        <div class="projeto">
+          <h3>Projeto 1</h3>
+          <p>Aplicação JavaScript interativa com funcionalidades dinâmicas.</p>
+          <a href="#" target="_blank">Ver Projeto</a>
+        </div>
+        <div class="projeto">
+          <h3>Projeto 2</h3>
+          <p>Site institucional moderno com design atrativo.</p>
+          <a href="#" target="_blank">Ver Projeto</a>
+        </div>
     </section>
-    <section id="Ferramenta">
-        <p>Frameworks</p>
-        <img src="./imagem/css.png" alt="logo css"><p>Css é uma stilização para documentos web</p>
-        <img src="./imagem/html.png" alt="Logo html"><p>HTML é uma marcação de texto na web</p>
-        <img src="./imagem/javascript.webp" alt="Logo java script"><p>Javascript é uma linguagem de programação</p>
+    <section id="ferramenta">
+      <h2>Frameworks</h2>
+      <div class="carrossel-container">
+        <div class="item"><img src="./imagem/css.png" alt="logo css"><p>CSS é uma estilização para documentos web</p></div>
+        <div class="item"><img src="./imagem/html.png" alt="Logo html"><p>HTML é uma marcação de texto na web</p></div>
+        <div class="item"><img src="./imagem/javascript.webp" alt="Logo javascript"><p>JavaScript é uma linguagem de programação</p></div>
+      </div>
     </section>
-    </main>
-  </body>
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Você pode me contatar pelo e-mail: <a href="maria.eduarda5799@gmail.com">maria.eduarda5799@gmail.com</a></p>
+    </section>
+    <script src = "./script.js"></script>
+  </main>
 
   <footer>
-    <p>&copy; 2025 - Portfólio Profissional by Eduarda Campos</p>
-    <a href="https://github.com/eduuarda5799" target="_blank" rel="noopener noreferrer"> github</a>
-
+    <p>&copy; 2025 - Meu Portfolio Profissional by Eduarda C. Todos os direitos reservados.</p>
   </footer>
+
+</body>
 </html>
