@@ -155,6 +155,22 @@ section h2 {
 .projeto a:hover {
   background-color: #5f1ba5;
 }
+/* Projetos centralizados */
+.projetos-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.projeto {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 280px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 
 /* Galeria de frameworks */
 .galeria {
@@ -172,7 +188,7 @@ section h2 {
 }
 
 .galeria img {
-  width: 100%;
+  /*width: 100%;*/
   height: 16rem;
   object-fit: cover;
   transition: transform 0.3s, box-shadow 0.3s;
